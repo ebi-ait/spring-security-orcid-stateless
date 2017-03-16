@@ -1,5 +1,7 @@
 package uk.ac.ebi.spot.security.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 
 /**
@@ -31,6 +33,7 @@ public class OrcidUser {
    private String familyName;
 
    @Column(name="apikey")
+   @JsonIgnore
    private String apikey;
 
    @Column(name="orcid")

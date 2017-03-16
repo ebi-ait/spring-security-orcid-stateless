@@ -73,6 +73,13 @@
 		</dependency>
 
 		<!-- things added by jupp -->
+
+		<dependency>
+		    <groupId>org.springframework.data</groupId>
+		    <artifactId>spring-data-rest-core</artifactId>
+		</dependency>
+
+
 		<dependency>
 			<groupId>org.hsqldb</groupId>
 			<artifactId>hsqldb</artifactId>

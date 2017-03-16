@@ -3,5 +3,6 @@ target/
 *.DS_store
 .idea
 *~
+.mvn
 data
 properties
