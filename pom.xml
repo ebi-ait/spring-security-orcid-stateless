@@ -4,7 +4,7 @@
 
 	<groupId>uk.ac.ebi.spot</groupId>
 	<artifactId>sping-security-orcid-stateless</artifactId>
-	<version>0.0.7-SNAPSHOT</version>
+	<version>0.0.7</version>
 	<packaging>jar</packaging>
 
 	<name>Spring security orcid</name>
@@ -31,7 +31,7 @@
 		<connection>scm:git:https://github.com/simonjupp/spring-security-orcid-stateless.git</connection>
 		<url>http://github.com/simonjupp/spring-security-orcid-stateless</url>
 		<developerConnection>scm:git:https://github.com/simonjupp/spring-security-orcid-stateless.git</developerConnection>
-	  <tag>HEAD</tag>
+	  <tag>0.0.7</tag>
   </scm>
 
 	<distributionManagement>
