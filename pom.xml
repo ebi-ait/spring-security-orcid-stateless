@@ -81,7 +81,7 @@
 			<url>http://gromit.ebi.ac.uk:8081/repository/maven-snapshots/</url>
 		</snapshotRepository>
 		<site>
-			<id>nexu s</id>
+			<id>nexus-site</id>
 			<url>dav:http://gromit.ebi.ac.uk:8081/repository/spot-spring-security-site/</url>
 		</site>
 	</distributionManagement>
@@ -173,7 +173,7 @@
 
 	<repositories>
 	    <repository>
-	        <id>nexus</id>
+	        <id>nexus-public</id>
 	        <name>Public Repository</name>
 	        <url>http://gromit.ebi.ac.uk:8081/repository/maven-public/</url>
 	        <releases>
@@ -234,15 +234,6 @@
                      </reports>
                  </reportSet>
              </reportSets>
-             <configuration>
-                 <tags>
-                     <tag>
-                         <name>date</name>
-                         <placement>a</placement>
-                         <head>Created on:</head>
-                     </tag>
-                 </tags>
-             </configuration>
          </plugin>
      </plugins>
  </reporting>
