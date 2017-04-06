@@ -1,16 +1,13 @@
 package uk.ac.ebi.spot.security.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Scope;
-import org.springframework.context.annotation.ScopedProxyMode;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import uk.ac.ebi.spot.security.model.OrcidUser;
 import uk.ac.ebi.spot.security.model.OrcidPrinciple;
 import uk.ac.ebi.spot.security.model.Role;
-import uk.ac.ebi.spot.security.repository.UserRepository;
+import uk.ac.ebi.spot.security.repository.OrcidUserRepository;
 import uk.ac.ebi.spot.security.util.HashUtils;
 
 import java.text.SimpleDateFormat;
@@ -19,7 +16,7 @@ import java.util.Date;
 
 /**
  * @author Simon Jupp
- * @date 22/09/2016
+ * @since 22/09/2016
  * Samples, Phenotypes and Ontologies Team, EMBL-EBI
  *
  * A service for getting and creating users from a user
@@ -31,7 +28,7 @@ import java.util.Date;
 public class OrcidUserService {
 
     @Autowired
-    UserRepository userRepository;
+    OrcidUserRepository userRepository;
 
     public OrcidUser getOrCreateUser (OrcidPrinciple orcidPrinciple, Collection<? extends GrantedAuthority> authorities) {
 

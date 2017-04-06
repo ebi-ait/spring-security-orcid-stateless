@@ -8,7 +8,7 @@ import uk.ac.ebi.spot.security.service.ModelAndViewHandlerInterceptor;
 
 /**
  * @author Simon Jupp
- * @date 22/09/2016
+ * @since 22/09/2016
  * Samples, Phenotypes and Ontologies Team, EMBL-EBI
  *
  * Registers interceptor to web mvc config

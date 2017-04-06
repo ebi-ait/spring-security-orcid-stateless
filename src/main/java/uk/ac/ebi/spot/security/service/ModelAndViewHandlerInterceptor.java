@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  * @author Simon Jupp
- * @date 22/09/2016
+ * @since 22/09/2016
  * Samples, Phenotypes and Ontologies Team, EMBL-EBI
  *
  * This intercepts all requests and adds an authenticated user to the ModelAndView. This means all your controllers

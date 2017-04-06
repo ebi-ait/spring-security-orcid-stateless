@@ -2,7 +2,7 @@ package uk.ac.ebi.spot.security.model;
 
 /**
  * @author Simon Jupp
- * @date 22/09/2016
+ * @since 22/09/2016
  * Samples, Phenotypes and Ontologies Team, EMBL-EBI
  *
  * An authenticated principle with a name and orcid id

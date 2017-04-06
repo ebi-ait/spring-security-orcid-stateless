@@ -27,7 +27,7 @@ import java.util.*;
 
 /**
  * @author Simon Jupp
- * @date 22/09/2016
+ * @since 22/09/2016
  * Samples, Phenotypes and Ontologies Team, EMBL-EBI
  *
  * This is adpated from UserTokenService - probably a better Spring way to override what I want to achieve here

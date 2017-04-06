@@ -9,7 +9,7 @@ import org.springframework.security.core.AuthenticationException;
 
 /**
  * @author Simon Jupp
- * @date 22/09/2016
+ * @since 22/09/2016
  * Samples, Phenotypes and Ontologies Team, EMBL-EBI
  *
  * A manager for getting authentication keys via an API KEY

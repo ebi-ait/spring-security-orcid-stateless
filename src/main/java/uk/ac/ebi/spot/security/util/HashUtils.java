@@ -10,7 +10,7 @@ import java.util.Arrays;
 
 /**
  * @author Simon Jupp
- * @date 22/09/2016
+ * @since 22/09/2016
  * Samples, Phenotypes and Ontologies Team, EMBL-EBI
  *
  * A utility class of hashing algorithms

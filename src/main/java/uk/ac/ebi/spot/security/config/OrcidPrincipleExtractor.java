@@ -7,7 +7,7 @@ import java.util.Map;
 
 /**
  * @author Simon Jupp
- * @date 22/09/2016
+ * @since 22/09/2016
  * Samples, Phenotypes and Ontologies Team, EMBL-EBI
  *
  * Creates an OrcidPrinciple from the object returned by the orcid authentication service

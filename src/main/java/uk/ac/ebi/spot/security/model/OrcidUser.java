@@ -1,12 +1,13 @@
 package uk.ac.ebi.spot.security.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import org.springframework.stereotype.Component;
 
 import javax.persistence.*;
 
 /**
  * @author Simon Jupp
- * @date 22/09/2016
+ * @since 22/09/2016
  * Samples, Phenotypes and Ontologies Team, EMBL-EBI
  *
  * Represents an Authorised user in the system
@@ -14,6 +15,7 @@ import javax.persistence.*;
  */
 @Entity
 @Table(name="user")
+@Component
 public class OrcidUser {
 
     /**

@@ -3,6 +3,7 @@ package uk.ac.ebi.spot.security.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
@@ -14,11 +15,12 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 import uk.ac.ebi.spot.security.model.OrcidUser;
 
 import javax.persistence.EntityManagerFactory;
+import javax.sql.DataSource;
 
 
 /**
  * @author Simon Jupp
- * @date 23/09/2016
+ * @since 23/09/2016
  * Samples, Phenotypes and Ontologies Team, EMBL-EBI
  */
 @Configuration
@@ -38,7 +40,7 @@ public class JpaRepositoryConfig {
 
       LocalContainerEntityManagerFactoryBean factory = new LocalContainerEntityManagerFactoryBean();
       factory.setJpaVendorAdapter(vendorAdapter);
-      factory.setPackagesToScan("uk.ac.ebi.spot");
+      factory.setPackagesToScan("uk.ac.ebi.spot.security.model");
       factory.setDataSource(dataSource);
       factory.afterPropertiesSet();
 

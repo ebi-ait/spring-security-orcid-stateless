@@ -19,7 +19,7 @@ import java.io.IOException;
 
 /**
  * @author Simon Jupp
- * @date 22/09/2016
+ * @since 22/09/2016
  * Samples, Phenotypes and Ontologies Team, EMBL-EBI
  *
  * A http request filter to snoop for apikeys in the parameter. If a request requires authentication and an API key is provided

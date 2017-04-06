@@ -18,7 +18,7 @@ import java.util.List;
 
 /**
  * @author Simon Jupp
- * @date 22/09/2016
+ * @since 22/09/2016
  * Samples, Phenotypes and Ontologies Team, EMBL-EBI
  *
  * The authentication provider that authenticates a user by api key. Authentication is done

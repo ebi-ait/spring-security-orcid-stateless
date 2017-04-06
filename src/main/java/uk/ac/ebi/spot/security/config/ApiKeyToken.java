@@ -7,7 +7,7 @@ import java.util.Collection;
 
 /**
  * @author Simon Jupp
- * @date 22/09/2016
+ * @since 22/09/2016
  * Samples, Phenotypes and Ontologies Team, EMBL-EBI
  */
 public class ApiKeyToken extends AbstractAuthenticationToken {
