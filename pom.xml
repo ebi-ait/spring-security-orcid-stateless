@@ -220,7 +220,7 @@
          <plugin>
              <groupId>org.apache.maven.plugins</groupId>
              <artifactId>maven-project-info-reports-plugin</artifactId>
-             <version>LATEST</version>
+             <version>RELEASE</version>
          </plugin>
          <plugin>
              <groupId>org.apache.maven.plugins</groupId>
