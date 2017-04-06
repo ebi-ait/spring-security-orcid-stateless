@@ -4,7 +4,7 @@
 
 	<groupId>uk.ac.ebi.spot</groupId>
 	<artifactId>sping-security-orcid-stateless</artifactId>
-	<version>0.0.9-SNAPSHOT</version>
+	<version>0.0.8-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>Spring security orcid</name>
@@ -81,7 +81,7 @@
 			<url>http://gromit.ebi.ac.uk:8081/repository/maven-snapshots/</url>
 		</snapshotRepository>
 		<site>
-			<id>nexus</id>
+			<id>nexu s</id>
 			<url>dav:http://gromit.ebi.ac.uk:8081/repository/spot-spring-security-site/</url>
 		</site>
 	</distributionManagement>
