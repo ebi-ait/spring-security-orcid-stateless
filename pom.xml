@@ -14,6 +14,41 @@
 		<name>EMBL-EBI European Bioinformatics Institute</name>
 		<url>http://www.ebi.ac.uk</url>
 	</organization>
+
+	<licenses>
+		<license>
+			<name>Apache License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0</url>
+		</license>
+	</licenses>
+	<developers>
+		<developer>
+			<id>simonjupp</id>
+			<name>Simon Jupp</name>
+			<email>jupp at ebi.ac.uk</email>
+			<organization>EMBL-EBI European Bioinformatics Institute</organization>
+			<organizationUrl>http://www.ebi.ac.uk</organizationUrl>
+			<roles>
+				<role>Project lead</role>
+			</roles>
+		</developer>
+		
+	</developers>
+
+	<!-- Mailing Lists -->
+	<mailingLists>
+		<mailingList>
+			<name>EMBL-EBI Samples, Phenotypes and Ontologies Team</name>
+			<post>ontology-tools-support@ebi.ac.uk</post>
+		</mailingList>
+	</mailingLists>
+
+	<!-- Bug Tracker -->
+	<issueManagement>
+		<system>github</system>
+		<url>https://github.com/simonjupp/spring-security-orcid-stateless/issues</url>
+	</issueManagement>
+
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
@@ -46,7 +81,7 @@
 			<url>http://gromit.ebi.ac.uk:8081/repository/maven-snapshots/</url>
 		</snapshotRepository>
 		<site>
-			<id>nexus</id>
+			<id>nexu s</id>
 			<url>dav:http://gromit.ebi.ac.uk:8081/repository/spot-spring-security-site/</url>
 		</site>
 	</distributionManagement>
@@ -179,4 +214,36 @@
 			</plugin>
 		</plugins>
 	</build>
+
+	<reporting>
+     <plugins>
+         <plugin>
+             <groupId>org.apache.maven.plugins</groupId>
+             <artifactId>maven-project-info-reports-plugin</artifactId>
+             <version>LATEST</version>
+         </plugin>
+         <plugin>
+             <groupId>org.apache.maven.plugins</groupId>
+             <artifactId>maven-javadoc-plugin</artifactId>
+             <version>2.8.1</version>
+             <reportSets>
+                 <reportSet>
+                     <id>aggregate</id>
+                     <reports>
+                         <report>aggregate</report>
+                     </reports>
+                 </reportSet>
+             </reportSets>
+             <configuration>
+                 <tags>
+                     <tag>
+                         <name>date</name>
+                         <placement>a</placement>
+                         <head>Created on:</head>
+                     </tag>
+                 </tags>
+             </configuration>
+         </plugin>
+     </plugins>
+ </reporting>
 </project>
