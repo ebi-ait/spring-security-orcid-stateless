@@ -139,8 +139,8 @@
 	<repositories>
 	    <repository>
 	        <id>nexus</id>
-	        <name>EXAMPLE Public Repository</name>
-	        <url>http://gromit.ebi.ac.uk:8081/repository/maven-public</url>
+	        <name>Public Repository</name>
+	        <url>http://gromit.ebi.ac.uk:8081/repository/maven-public/</url>
 	        <releases>
 	            <enabled>true</enabled>
 	        </releases>
@@ -159,35 +159,13 @@
 				<configuration>
 					<tagNameFormat>@{project.version}</tagNameFormat>
 					<autoVersionSubmodules>true</autoVersionSubmodules>
-					<!--<releaseProfiles>releases</releaseProfiles>-->
 				</configuration>
 			</plugin>
-			<!--<plugin>-->
-				<!--<groupId>org.sonatype.plugins</groupId>-->
-				<!--<artifactId>nexus-staging-maven-plugin</artifactId>-->
-				<!--<version>1.6.8</version>-->
-				<!--<extensions>true</extensions>-->
-				<!--<executions>-->
-					<!--<execution>-->
-						<!--<id>default-deploy</id>-->
-						<!--<phase>deploy</phase>-->
-						<!--<goals>-->
-							<!--<goal>deploy</goal>-->
-						<!--</goals>-->
-					<!--</execution>-->
-				<!--</executions>-->
-				<!--<configuration>-->
-					<!--<serverId>nexus</serverId>-->
-					<!--<nexusUrl>http://gromit.ebi.ac.uk:8081</nexusUrl>-->
-				<!--</configuration>-->
-			<!--</plugin>-->
-			<!--<plugin>-->
-				<!--<groupId>org.apache.maven.plugins</groupId>-->
-				<!--<artifactId>maven-deploy-plugin</artifactId>-->
-				<!--<configuration>-->
-					<!--<skip>true</skip>-->
-				<!--</configuration>-->
-			<!--</plugin>-->
+			<plugin>
+			    <groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+      			<version>2.10.4</version>
+			</plugin>
 			<plugin>
 				<artifactId>maven-site-plugin</artifactId>
 				<version>3.5.1</version>
@@ -201,40 +179,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
-	<!--<profiles>-->
-		<!--<profile>-->
-			<!--<id>releases</id>-->
-			<!--<build>-->
-				<!--<plugins>-->
-					<!--<plugin>-->
-						<!--<groupId>org.sonatype.plugins</groupId>-->
-						<!--<artifactId>nexus-staging-maven-plugin</artifactId>-->
-						<!--<version>1.6.8</version>-->
-						<!--<executions>-->
-							<!--<execution>-->
-								<!--<id>default-deploy</id>-->
-								<!--<phase>deploy</phase>-->
-								<!--<goals>-->
-									<!--<goal>deploy</goal>-->
-								<!--</goals>-->
-							<!--</execution>-->
-						<!--</executions>-->
-						<!--<configuration>-->
-							<!--<serverId>nexus</serverId>-->
-							<!--<nexusUrl>http://gromit.ebi.ac.uk:8081</nexusUrl>-->
-							<!--<skipStaging>true</skipStaging>-->
-						<!--</configuration>-->
-					<!--</plugin>-->
-					<!--<plugin>-->
-						<!--<groupId>org.apache.maven.plugins</groupId>-->
-						<!--<artifactId>maven-deploy-plugin</artifactId>-->
-						<!--<configuration>-->
-							<!--<skip>true</skip>-->
-						<!--</configuration>-->
-					<!--</plugin>-->
-				<!--</plugins>-->
-			<!--</build>-->
-		<!--</profile>-->
-	<!--</profiles>-->
 </project>
